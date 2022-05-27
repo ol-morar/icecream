@@ -1,0 +1,35 @@
+.header {
+  padding-top: 10px;
+  background: #ffb8ca;
+  &__inner {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    display: none;
+  }
+}
+
+.logo {
+  display: inline-block;
+  width: 199px;
+  height: 50px;
+  img {
+    display: block;
+  }
+}
+
+.nav-list {
+  display: none;
+  // .nav-list__item
+
+  &__item {
+  }
+
+  // .nav-list__link
+
+  &__link {
+  }
+}

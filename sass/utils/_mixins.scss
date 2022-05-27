@@ -1,0 +1,27 @@
+@mixin min-1280 {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
+@mixin min-768 {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin min-480 {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+@mixin max-479 {
+  @media screen and (max-width: 479px) {
+    @content;
+  }
+}
+
+@mixin font($fw, $fz, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+  letter-spacing: $ls;
+}

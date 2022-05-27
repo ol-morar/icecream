@@ -1,0 +1,60 @@
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  // text-align: center;
+  overflow: auto;
+  transition: opacity 250ms linear, visibility 250ms ease;
+  background: #e17992;
+  .container {
+    padding: 20px;
+  }
+
+  &__btn {
+    position: relative;
+    @include font(700, 18px, 1.31, null);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 209px;
+    margin-bottom: 30px;
+    padding: 15px 5px;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #d41443;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 49px;
+      width: 8px;
+      height: 10px;
+      background-image: url(/img/btn-icons/arron-right.svg);
+    }
+  }
+}
+
+.mob-menu-list {
+  // .mob-menu-list__item
+
+  &__item + &__item {
+    margin-top: 30px;
+  }
+
+  // .mob-menu-list__link
+
+  &__link {
+    @include font(400, 22px, 1.28, null);
+    color: #fff;
+    // @include max-479 {
+    //   @include font(700, 2.9vw, 1.28, null);
+    // }
+  }
+}
+.no-scroll {
+  overflow: hidden;
+}
